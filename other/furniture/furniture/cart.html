@@ -1,383 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cart</title>
 
-    <link rel="icon" href="asset/img/logo-sm.png">
+    <link rel="icon" href="asset/img/logo-sm.png" />
 
     <!-- fontAwesome -->
-    <link rel="stylesheet" href="asset/css/all.min.css">
+    <link rel="stylesheet" href="asset/css/all.min.css" />
     <!-- remix-icon -->
-    <link rel="stylesheet" href="asset/fonts/remixicon.css">
+    <link rel="stylesheet" href="asset/fonts/remixicon.css" />
     <!-- box icon -->
-    <link rel="stylesheet" href="asset/fonts/boxicons.min.css">
+    <link rel="stylesheet" href="asset/fonts/boxicons.min.css" />
     <!-- bootstrap icons -->
-    <link rel="stylesheet" href="asset/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="asset/bootstrap-icons/bootstrap-icons.css" />
 
     <!-- fonts -->
-    <link rel="stylesheet" href="asset/fonts/stylesheet.css">
+    <link rel="stylesheet" href="asset/fonts/stylesheet.css" />
 
     <!-- CSS  -->
-    <link rel="stylesheet" href="asset/css/style.css">
-    <link rel="stylesheet" href="asset/css/common.css">
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <link rel="stylesheet" href="asset/css/common.css" />
 
     <!-- swiper-js -->
-    <link rel="stylesheet" href="asset/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="asset/css/swiper-bundle.min.css" />
 
     <!-- card-swiper -->
-    <link rel="stylesheet" href="asset/css/card-swiper.css">
+    <link rel="stylesheet" href="asset/css/card-swiper.css" />
 
     <!-- headline js -->
-    <link rel="stylesheet" href="asset/css/headline.css">
+    <link rel="stylesheet" href="asset/css/headline.css" />
 
     <!-- media -->
-    <link rel="stylesheet" href="asset/css/media.css">
+    <link rel="stylesheet" href="asset/css/media.css" />
 
     <!-- bootstrap -->
-    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+  </head>
 
-</head>
-
-<body id="body">
-
+  <body id="body">
     <!-- HEARED START -->
-    <div id="header" class="cotainer-fluid position-sticky top-0 w-100 bg-light">
-        <nav class="navbar navbar-expand-lg py-4" id="scrollspy">
-            <a class="navbar-brand text-dark me-0 ms-2 ms-sm-4 signture1 fs-1" href="index.html">Sundaram Enterprise</a>
+    <div
+      id="header"
+      class="cotainer-fluid position-sticky top-0 w-100 bg-light"
+    >
+      <nav class="navbar navbar-expand-lg py-4" id="scrollspy">
+        <a
+          class="navbar-brand text-dark me-0 ms-2 ms-sm-4 signture1 fs-1"
+          href="index.html"
+          >Sundaram Enterprise</a
+        >
 
-            <button class="navbar-toggler bg-light me-2 me-sm-5" data-bs-target="#nav1" data-bs-toggle="collapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse me-5 flex-lg-column flex-xl-row" id="nav1">
-                <ul class="navbar-nav ms-auto">
-                    <li class="navbar-item"><a class="nav-link text-dark px-0 mx-2 mx-xxl-3 nav-hover font-monospace"
-                            href="index.html">HOME</a>
-                    </li>
-                    <li class="navbar-item"><a class="nav-link text-dark px-0 mx-2 mx-xxl-3 nav-hover font-monospace"
-                        href="index.html#pages">PAGES</a>
-                    </li>
-                    <li class="navbar-item"><a class="nav-link text-dark px-0 mx-2 mx-xxl-3 nav-hover font-monospace"
-                        href="index.htm#counter">PORTFOLIO</a>
-                    </li>
-                    <li class="navbar-item"><a class="nav-link text-dark px-0 mx-2 mx-xxl-3 nav-hover font-monospace"
-                        href="index.htm#blogs">BLOGS</a>
-                    </li>
-                    <li class="navbar-item position-relative main-menu"><a
-                            class="nav-link text-dark px-0 mx-2 mx-xxl-3 nav-hover font-monospace "
-                            href="shop.html">SHOP</a>
-                        <ul
-                            class="sub-menu d-none bg-dark text-light text-start text-nowrap px-5 py-3 position-absolute start-50 translate-middle-x">
-                            <li class="fw-semibold font-monospace mb-3">SHOP PAGES</li>
-                            <li class="mb-2"><a
-                                    class="text-decoration-none text-secondary text-hover-light font-monospace"
-                                    href="myaccount.html">MY ACCOUNT</a></li>
-                            <li class="mb-2"><a
-                                    class="text-decoration-none text-secondary text-hover-light font-monospace"
-                                    href="wishlist.html">WISHLIST</a></li>
-                            <li class="mb-2"><a
-                                    class="text-decoration-none text-secondary text-hover-light font-monospace"
-                                    href="cart.html">CART</a></li>
-                            <li class="mb-2"><a
-                                    class="text-decoration-none text-secondary text-hover-light font-monospace"
-                                    href="track-order.html">ORDER TRACKING</a></li>
-                        </ul>
-                    </li>
-                    <li class="navbar-item"><a class="nav-link text-dark px-0 mx-2 mx-xxl-3 nav-hover font-monospace"
-                            href="#footer">CONTACT</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-auto">
-                    <li class="navbar-item"><a class="nav-link text-dark px-1 mx-2 fs-5" href="cart.html"><i
-                                class="bi bi-cart3"></i></a> </li>
-                    <li class="navbar-item"><a class="nav-link text-dark  px-1 mx-2 fs-5" href="wishlist.html"><i
-                                class="bi bi-heart"></i></a></li>
-                    <li class="navbar-item position-relative "><a class="search-icon nav-link text-dark px-1 mx-2 fs-5"
-                            href="#"><i class="bi bi-search"></i></a>
-                        <ul class="position-absolute end-0 search-bar close-menu">
-                            <li>
-                                <div class="bg-dark p-4 position-relative">
-                                    <input class="outline-none border-down bg-transparent text-light py-2 px-5"
-                                        type="search" placeholder="search here....">
-                                    <a class="text-decoration-none text-light position-absolute top-50 end-25 translate-middle close-btn"
-                                        href="#">X</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="navbar-item"><a href="myaccount.html" class=" btn btn-outline-secondary mx-2">Log In</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <button
+          class="navbar-toggler bg-light me-2 me-sm-5"
+          data-bs-target="#nav1"
+          data-bs-toggle="collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse me-5 flex-lg-column flex-xl-row"
+          id="nav1"
+        >
+          <ul class="navbar-nav ms-auto">
+            <li class="navbar-item">
+              <a
+                class="nav-link text-dark px-0 mx-2 mx-xxl-3 nav-hover font-monospace"
+                href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                class="nav-link text-dark px-0 mx-2 mx-xxl-3 nav-hover font-monospace"
+                href="index.html#pages"
+                >PAGES</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                class="nav-link text-dark px-0 mx-2 mx-xxl-3 nav-hover font-monospace"
+                href="index.html#counter"
+                >PORTFOLIO</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a
+                class="nav-link text-dark px-0 mx-2 mx-xxl-3 nav-hover font-monospace"
+                href="index.html#blogs"
+                >BLOGS</a
+              >
+            </li>
+            <li class="navbar-item position-relative main-menu">
+              <a
+                class="nav-link text-dark px-0 mx-2 mx-xxl-3 nav-hover font-monospace"
+                href="shop.html"
+                >SHOP</a
+              >
+              <ul
+                class="sub-menu d-none bg-dark text-light text-start text-nowrap px-5 py-3 position-absolute start-50 translate-middle-x"
+              >
+                <li class="fw-semibold font-monospace mb-3">SHOP PAGES</li>
+                <li class="mb-2">
+                  <a
+                    class="text-decoration-none text-secondary text-hover-light font-monospace"
+                    href="myaccount.html"
+                    >MY ACCOUNT</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="text-decoration-none text-secondary text-hover-light font-monospace"
+                    href="wishlist.html"
+                    >WISHLIST</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="text-decoration-none text-secondary text-hover-light font-monospace"
+                    href="cart.html"
+                    >CART</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="text-decoration-none text-secondary text-hover-light font-monospace"
+                    href="track-order.html"
+                    >ORDER TRACKING</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-item">
+              <a
+                class="nav-link text-dark px-0 mx-2 mx-xxl-3 nav-hover font-monospace"
+                href="#footer"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="navbar-item">
+              <a class="nav-link text-dark px-1 mx-2 fs-5" href="cart.html"
+                ><i class="bi bi-cart3"></i
+              ></a>
+            </li>
+            <li class="navbar-item">
+              <a class="nav-link text-dark px-1 mx-2 fs-5" href="wishlist.html"
+                ><i class="bi bi-heart"></i
+              ></a>
+            </li>
+            <li class="navbar-item position-relative">
+              <a class="search-icon nav-link text-dark px-1 mx-2 fs-5" href="#"
+                ><i class="bi bi-search"></i
+              ></a>
+              <ul class="position-absolute end-0 search-bar close-menu">
+                <li>
+                  <div class="bg-dark p-4 position-relative">
+                    <input
+                      class="outline-none border-down bg-transparent text-light py-2 px-5"
+                      type="search"
+                      placeholder="search here...."
+                    />
+                    <a
+                      class="text-decoration-none text-light position-absolute top-50 end-25 translate-middle close-btn"
+                      href="#"
+                      >X</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar-item">
+              <a href="myaccount.html" class="btn btn-outline-secondary mx-2"
+                >Log In</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
     <!-- HEARED END -->
 
-
-
-
     <!-- MAIN SATRT -->
-    <main class="main" data-bs-spy="scroll" data-bs-target="scrollspy" data-bs-smooth-scroll="true" tabindex="0">
+    <main
+      class="main"
+      data-bs-spy="scroll"
+      data-bs-target="scrollspy"
+      data-bs-smooth-scroll="true"
+      tabindex="0"
+    >
+      <!-- breadcrumb start -->
+      <nav
+        class="breadcrumb-nav p-5 blue-back"
+        style="--bs-breadcrumb-divider: '>'"
+        aria-label="breadcrumb"
+      >
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a
+              class="text-dark fw-bold nav-hover mx-4 text-decoration-none font-monospace"
+              href="index.html"
+              >HOME</a
+            >
+          </li>
+          <li class="breadcrumb-item">
+            <a
+              class="text-dark fw-bold nav-hover mx-4 text-decoration-none font-monospace"
+              href="shop.html"
+              >SHOP</a
+            >
+          </li>
+          <li
+            class="breadcrumb-item active font-monospace ls5"
+            aria-current="page"
+          >
+            &nbsp; CART
+          </li>
+        </ol>
+      </nav>
+      <!-- breadcrumb end -->
 
-
-        <!-- breadcrumb start -->
-        <nav class="breadcrumb-nav p-5 blue-back" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item  "><a
-                        class="text-dark fw-bold nav-hover mx-4 text-decoration-none font-monospace"
-                        href="index.html">HOME</a></li>
-                <li class="breadcrumb-item  "><a
-                        class="text-dark fw-bold nav-hover mx-4 text-decoration-none font-monospace"
-                        href="shop.html">SHOP</a></li>
-                <li class="breadcrumb-item active font-monospace ls5" aria-current="page">&nbsp; CART</li>
-            </ol>
-        </nav>
-        <!-- breadcrumb end -->
-
-
-        <!-- home start -->
-        <section class="container-fluid g-0 my-5" id="shop">
-            <span class="my-bg-font pt-5 ms-5 display-1">MY CART </span>
-            <div class="container bg-light g-0 my-5">
-                <div class="table-responsive">
-                    <table class="table  border-borderless align-middle mb-5 fs-6">
-                        <thead>
-                            <tr>
-                                <th class="p-3">PRODUCTS</th>
-                                <th class="p-3">PRICE</th>
-                                <th class="p-3">QUANTITY</th>
-                                <th class="p-3">SUBTOTAL</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-center m-3">
-                                        <span class="p-2 me-2 fs-4 cursor-p"> x </span>
-                                        <div>
-                                            <img class="cart-bill-img me-md-4" src="asset/img/bill1.jpg" alt="">
-                                            <span>MINIMAL SPACE</span>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>$ 699</td>
-                                <td><span class="p-2 me-2 fs-4 cursor-p">- </span> 1 <span
-                                        class="p-2 ms-2 fs-4 cursor-p">
-                                        +</span></td>
-                                <td>$ 699</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-center m-3">
-                                        <span class="p-2 me-2 fs-4 cursor-p"> x </span>
-                                        <div>
-                                            <img class="cart-bill-img me-md-4" src="asset/img/bill2.jpg" alt="">
-                                            <span>DARK KITCHEN</span>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>$ 699</td>
-                                <td><span class="p-2 me-2 fs-4 cursor-p">- </span> 1 <span
-                                        class="p-2 ms-2 fs-4 cursor-p">
-                                        +</span></td>
-                                <td>$ 699</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td colspan="3">
-                                    <div class="m-sm-3">
-                                        <input class="border-0 border-bottom border-secondary outline-none me-3 mb-2 p-2"
-                                            type="text" placeholder="Counop code">
-                                        <a href="#" class="btn btn-outline-danger rounded-0 px-5">APPLY COUPON</a>
-                                    </div>
-                                </td>
-                                <td class="px-0 ">
-                                    <a href="#" class="btn btn-outline-danger rounded-0 px-5 mx-3">UPDATE CART</a>
-                                </td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-                <h2 class="fs-1 py-3 px-1 px-sm-3">CART TOTALS </h2>
-                <div class="table-responsive">
-                    <table class="table border-borderless align-middle mb-5 ">
-                        <tbody>
-                            <tr>
-                                <th class="py-3 px-1 px-sm-3">SUBTOTAL</th>
-                                <td>$ 1,398</td>
-                            </tr>
-                            <tr>
-                                <th class="py-3 px-1 px-sm-3">SHIPPING</th>
-                                <td class="py-3">
-                                    <p>Flat rate: $55</p>
-                                    <p>Shipping to NY.</p>
-                                    <a href="#" class="btn btn-outline-danger rounded-0 px-sm-5">UPDATE CART</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th class="py-3 px-1 px-sm-3">TOTAL</th>
-                                <td>$ 1,453</td>
-                            </tr>
-                            <tr>
-                                <td class="border-0 pt-5 px-1 px-sm-3">
-                                    <a href="#" class="btn btn-outline-danger rounded-0 px-sm-5">PROCEED TO CHECKOUT</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-        <!-- home end -->
-
-
-
-
-
-        <!-- footer start -->
-        <footer id="footer" class="container-fluid position-relative g-0">
-            <div class="blue-back position-absolute top-0 left-0 right-0 h-100 w-100 "></div>
-            <div class="container">
-                <div class="footer position-relative">
-                    <div class="row bg-light p-sm-5">
-                        <div class="col-lg-4 d-flex justify-center align-center">
-                            <div class="left-foot">
-                                <h3><a class="navbar-brand text-dark mx-0 signture1 fs-1" href="#home1">Sundaram
-                                        Enterprise</a>
-                                </h3>
-                                <p class="fs-5 my-4">We make interiors infused with the spirit of contemporary design
-                                    and
-                                    minimalist philosophies.</p>
-                                <div class="links">
-                                    <ul class="d-sm-flex px-0">
-                                        <li class="my-3 me-3"><a
-                                                class="text-decoration-none text-dark nav-hover fw-semibold card-text-hover"
-                                                href="https://www.instagram.com/" target="_blank">INSTAGRAM</a></li>
-                                        <li class="my-3 me-3"><a
-                                                class="text-decoration-none text-dark nav-hover fw-semibold card-text-hover"
-                                                href="https://www.facebook.com/" target="_blank">FACEBOOK</a></li>
-                                        <li class="my-3 "><a
-                                                class="text-decoration-none text-dark nav-hover fw-semibold card-text-hover"
-                                                href="https://in.linkedin.com/" target="_blank">LINKEDIN</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="center-foot m-5">
-                                <div>
-                                    <h6 class="fs-5 fw-bold"> DESIGNERS</h6>
-                                    <ul class="p-0">
-                                        <li class="my-2"><a
-                                                class="fs-6 text-decoration-none text-dark fw-semilight card-text-hover"
-                                                href="#">Ivana Kostadinova</a></li>
-                                        <li class="my-2"><a
-                                                class="fs-6 text-decoration-none text-dark fw-semilight card-text-hover"
-                                                href="#">Italymobile</a></li>
-                                        <li class="my-2"><a
-                                                class="fs-6 text-decoration-none text-dark fw-semilight card-text-hover"
-                                                href="#">Sweden Int</a></li>
-                                        <li class="my-2"><a
-                                                class="fs-6 text-decoration-none text-dark fw-semilight card-text-hover"
-                                                href="#">Arch. France</a></li>
-                                    </ul>
-                                </div>
-                                <div class="pt-4">
-                                    <h6 class="fs-5 fw-bold"> FAQ</h6>
-                                    <ul class="p-0">
-                                        <li class="my-2"><a
-                                                class="fs-6 text-decoration-none text-dark fw-semilight card-text-hover"
-                                                href="#">Where can I find your catalog?</a></li>
-                                        <li class="my-2"><a
-                                                class="fs-6 text-decoration-none text-dark fw-semilight card-text-hover"
-                                                href="#">Can I make online purchases?</a></li>
-                                        <li class="my-2"><a
-                                                class="fs-6 text-decoration-none text-dark fw-semilight card-text-hover"
-                                                href="#">When can I visit your studio?</a></li>
-                                        <li class="my-2"><a
-                                                class="fs-6 text-decoration-none text-dark fw-semilight card-text-hover"
-                                                href="#">How long does shipping take?</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="form">
-                                <h3 class="mb-5 fs-2 line-bottom-1">Send Message Us</h3>
-                                <input class="form-control rounded-0 mb-3" type="text" placeholder="Your Name">
-                                <input class="form-control rounded-0 mb-3" type="email" placeholder="Your Email">
-                                <input class="form-control rounded-0 mb-3" type="text" placeholder="subject">
-                                <textarea class="form-control rounded-0 mb-3" rows="5" placeholder="Message"></textarea>
-                                <div class="text-center mb-5">
-                                    <button
-                                        class="btn btn-primary rounded-pill py-2 px-3 fw-light border border-5 send-btn"
-                                        style="font-size: 18px;">Send Message</button>
-                                </div>
-                            </div>
-                        </div>
+      <!-- home start -->
+      <section class="container-fluid g-0 my-5" id="shop">
+        <span class="my-bg-font pt-5 ms-5 display-1">MY CART </span>
+        <div class="container bg-light g-0 my-5">
+          <div class="table-responsive">
+            <table class="table border-borderless align-middle mb-5 fs-6">
+              <thead>
+                <tr>
+                  <th class="p-3">PRODUCTS</th>
+                  <th class="p-3">PRICE</th>
+                  <th class="p-3">QUANTITY</th>
+                  <th class="p-3">SUBTOTAL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="d-flex align-center m-3">
+                      <span class="p-2 me-2 fs-4 cursor-p"> x </span>
+                      <div>
+                        <img
+                          class="cart-bill-img me-md-4"
+                          src="asset/img/bill1.jpg"
+                          alt=""
+                        />
+                        <span>MINIMAL SPACE</span>
+                      </div>
                     </div>
-                </div>
-            </div>
-        </footer>
-        <!-- footer end -->
-
-
-
-        <!-- TOP & SETTING START -->
-        <div class="top-btn position-fixed" style="right: 3%; bottom: 8%;">
-            <a class="bg-danger bg-gradient rounded position-relative" href="#"><i
-                    class="fa-sharp fa-solid fa-arrow-up text-light fs-5"></i></a>
+                  </td>
+                  <td>$ 699</td>
+                  <td>
+                    <span class="p-2 me-2 fs-4 cursor-p">- </span> 1
+                    <span class="p-2 ms-2 fs-4 cursor-p"> +</span>
+                  </td>
+                  <td>$ 699</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="d-flex align-center m-3">
+                      <span class="p-2 me-2 fs-4 cursor-p"> x </span>
+                      <div>
+                        <img
+                          class="cart-bill-img me-md-4"
+                          src="asset/img/bill2.jpg"
+                          alt=""
+                        />
+                        <span>DARK KITCHEN</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>$ 699</td>
+                  <td>
+                    <span class="p-2 me-2 fs-4 cursor-p">- </span> 1
+                    <span class="p-2 ms-2 fs-4 cursor-p"> +</span>
+                  </td>
+                  <td>$ 699</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="3">
+                    <div class="m-sm-3">
+                      <input
+                        class="border-0 border-bottom border-secondary outline-none me-3 mb-2 p-2"
+                        type="text"
+                        placeholder="Counop code"
+                      />
+                      <a href="#" class="btn btn-outline-danger rounded-0 px-5"
+                        >APPLY COUPON</a
+                      >
+                    </div>
+                  </td>
+                  <td class="px-0">
+                    <a
+                      href="#"
+                      class="btn btn-outline-danger rounded-0 px-5 mx-3"
+                      >UPDATE CART</a
+                    >
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <h2 class="fs-1 py-3 px-1 px-sm-3">CART TOTALS</h2>
+          <div class="table-responsive">
+            <table class="table border-borderless align-middle mb-5">
+              <tbody>
+                <tr>
+                  <th class="py-3 px-1 px-sm-3">SUBTOTAL</th>
+                  <td>$ 1,398</td>
+                </tr>
+                <tr>
+                  <th class="py-3 px-1 px-sm-3">SHIPPING</th>
+                  <td class="py-3">
+                    <p>Flat rate: $55</p>
+                    <p>Shipping to NY.</p>
+                    <a href="#" class="btn btn-outline-danger rounded-0 px-sm-5"
+                      >UPDATE CART</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <th class="py-3 px-1 px-sm-3">TOTAL</th>
+                  <td>$ 1,453</td>
+                </tr>
+                <tr>
+                  <td class="border-0 pt-5 px-1 px-sm-3">
+                    <a href="#" class="btn btn-outline-danger rounded-0 px-sm-5"
+                      >PROCEED TO CHECKOUT</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-        <!-- TOP & SETTING END -->
+      </section>
+      <!-- home end -->
 
+      <!-- footer start -->
+      <footer id="footer" class="container-fluid position-relative g-0">
+        <div
+          class="blue-back position-absolute top-0 left-0 right-0 h-100 w-100"
+        ></div>
+        <div class="container">
+          <div class="footer position-relative">
+            <div class="row bg-light p-sm-5">
+              <div class="col-lg-4 d-flex justify-center align-center">
+                <div class="left-foot">
+                  <h3>
+                    <a
+                      class="navbar-brand text-dark mx-0 signture1 fs-1"
+                      href="#home1"
+                      >Sundaram Enterprise</a
+                    >
+                  </h3>
+                  <p class="fs-5 my-4">
+                    We make interiors infused with the spirit of contemporary
+                    design and minimalist philosophies.
+                  </p>
+                  <div class="links">
+                    <ul class="d-sm-flex px-0">
+                      <li class="my-3 me-3">
+                        <a
+                          class="text-decoration-none text-dark nav-hover fw-semibold card-text-hover"
+                          href="https://www.instagram.com/"
+                          target="_blank"
+                          >INSTAGRAM</a
+                        >
+                      </li>
+                      <li class="my-3 me-3">
+                        <a
+                          class="text-decoration-none text-dark nav-hover fw-semibold card-text-hover"
+                          href="https://www.facebook.com/"
+                          target="_blank"
+                          >FACEBOOK</a
+                        >
+                      </li>
+                      <li class="my-3">
+                        <a
+                          class="text-decoration-none text-dark nav-hover fw-semibold card-text-hover"
+                          href="https://in.linkedin.com/"
+                          target="_blank"
+                          >LINKEDIN</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="center-foot m-5">
+                  <div>
+                    <h6 class="fs-5 fw-bold">DESIGNERS</h6>
+                    <ul class="p-0">
+                      <li class="my-2">
+                        <a
+                          class="fs-6 text-decoration-none text-dark fw-semilight card-text-hover"
+                          href="#"
+                          >Ivana Kostadinova</a
+                        >
+                      </li>
+                      <li class="my-2">
+                        <a
+                          class="fs-6 text-decoration-none text-dark fw-semilight card-text-hover"
+                          href="#"
+                          >Italymobile</a
+                        >
+                      </li>
+                      <li class="my-2">
+                        <a
+                          class="fs-6 text-decoration-none text-dark fw-semilight card-text-hover"
+                          href="#"
+                          >Sweden Int</a
+                        >
+                      </li>
+                      <li class="my-2">
+                        <a
+                          class="fs-6 text-decoration-none text-dark fw-semilight card-text-hover"
+                          href="#"
+                          >Arch. France</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pt-4">
+                    <h6 class="fs-5 fw-bold">FAQ</h6>
+                    <ul class="p-0">
+                      <li class="my-2">
+                        <a
+                          class="fs-6 text-decoration-none text-dark fw-semilight card-text-hover"
+                          href="#"
+                          >Where can I find your catalog?</a
+                        >
+                      </li>
+                      <li class="my-2">
+                        <a
+                          class="fs-6 text-decoration-none text-dark fw-semilight card-text-hover"
+                          href="#"
+                          >Can I make online purchases?</a
+                        >
+                      </li>
+                      <li class="my-2">
+                        <a
+                          class="fs-6 text-decoration-none text-dark fw-semilight card-text-hover"
+                          href="#"
+                          >When can I visit your studio?</a
+                        >
+                      </li>
+                      <li class="my-2">
+                        <a
+                          class="fs-6 text-decoration-none text-dark fw-semilight card-text-hover"
+                          href="#"
+                          >How long does shipping take?</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="form">
+                  <h3 class="mb-5 fs-2 line-bottom-1">Send Message Us</h3>
+                  <input
+                    class="form-control rounded-0 mb-3"
+                    type="text"
+                    placeholder="Your Name"
+                  />
+                  <input
+                    class="form-control rounded-0 mb-3"
+                    type="email"
+                    placeholder="Your Email"
+                  />
+                  <input
+                    class="form-control rounded-0 mb-3"
+                    type="text"
+                    placeholder="subject"
+                  />
+                  <textarea
+                    class="form-control rounded-0 mb-3"
+                    rows="5"
+                    placeholder="Message"
+                  ></textarea>
+                  <div class="text-center mb-5">
+                    <button
+                      class="btn btn-primary rounded-pill py-2 px-3 fw-light border border-5 send-btn"
+                      style="font-size: 18px"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+
+      <!-- TOP & SETTING START -->
+      <div class="top-btn position-fixed" style="right: 3%; bottom: 8%">
+        <a class="bg-danger bg-gradient rounded position-relative" href="#"
+          ><i class="fa-sharp fa-solid fa-arrow-up text-light fs-5"></i
+        ></a>
+      </div>
+      <!-- TOP & SETTING END -->
     </main>
     <!-- MAIN END -->
-
 
     <!-- java script -->
     <script src="asset/js/jquery-3.7.0.min.js"></script>
     <script src="asset/js/headline.js"></script>
     <script src="asset/js/swiper-bundle.min.js"></script>
 
-
     <!-- bootstrap -->
     <script src="asset/js/popper.min.js"></script>
     <script src="asset/js/bootstrap.bundle.min.js"></script>
 
-
-
     <script>
-        $(document).ready(function () {
-
-
-            // scrall btn start
-            $(window).scroll(function () {
-                if (scrollY > 100) {
-                    $('.top-btn').addClass('d-block');
-                }
-                else {
-                    $('.top-btn').removeClass('d-block');
-                }
-            });
-            // scrall btn end
-
-
-            // search icon start
-            $('.search-icon').click(function () {
-                $(this).next('.search-bar').addClass('d-block');
-            });
-            $('.close-btn').click(function () {
-                $('.close-menu').removeClass('d-block');
-            });
-            // search icon end
-
+      $(document).ready(function () {
+        // scrall btn start
+        $(window).scroll(function () {
+          if (scrollY > 100) {
+            $(".top-btn").addClass("d-block");
+          } else {
+            $(".top-btn").removeClass("d-block");
+          }
         });
+        // scrall btn end
+
+        // search icon start
+        $(".search-icon").click(function () {
+          $(this).next(".search-bar").addClass("d-block");
+        });
+        $(".close-btn").click(function () {
+          $(".close-menu").removeClass("d-block");
+        });
+        // search icon end
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
